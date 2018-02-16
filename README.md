@@ -23,6 +23,10 @@ python manage.py runserver
 1. http://127.0.0.1:8000/book
 2. http://127.0.0.1:8000/modify/<reservation_id>
 
+# DB
+
+sqlite3 - default db in django, no installation required. We can use other robust db too (no restriction)
+
 # Project
 
 This support API for create and modify reservation booking with API urls.
