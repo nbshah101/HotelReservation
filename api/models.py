@@ -8,8 +8,8 @@ class ReservationList(models.Model):
     name = models.CharField(max_length=255, blank=False)
     count = models.CharField(max_length=255, blank=False)
     date_created = models.DateTimeField(auto_now_add=True)
-    check_in = models.DateField()
-    check_out = models.DateField()
+    check_in = models.DateField(blank=False)
+    check_out = models.DateField(blank=False)
     status = models.CharField(max_length=255, choices=status_choice, default='FUTURE RESERVATION')
 
     def __str__(self):
